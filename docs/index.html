@@ -18,7 +18,7 @@
 
               
               
-              <div class = "badge" data-md-tooltip="Not Validated" id="greycheck">
+              <div class = "badge" data-md-tooltip="Support Level" id = internal_inactive >
               <!-- &#10039; -->
               </div>
               
@@ -46,14 +46,11 @@
               
 
               
-              <a href= "https://github.com/nmfs-fish-tools/MSE.git" target="_blank" title="link to code repository">
-                <button class = "codelink">
+                <button class = "codelink" id = "nolink">
                 Code Repository
                 </button>
-              </a>
               
-              <button class = "IconButton" title="need support?">
-                ?
+              <button class = "IconButton" title="e-mail fisheries.toolbox@noaa.gov" id ="email" onclick='location.href= "mailto:fisheries.toolbox@noaa.gov;"'>
               </button>
 
         </div>
@@ -68,14 +65,16 @@
 
               </div>
 
+
               
 
-              <!-- <a class = "githubIcon" href="https://github.com/nmfs-fish-tools/MSE.git" target="_blank"></a> -->
+              <!-- <a class = "githubIcon" href="" target="_blank"></a> -->
 
               <button class = "versionButton">
               Version 3.4.3
               </button>
         </div>
+
         <div class ="label">
             
              Type: model wrapper
@@ -83,24 +82,46 @@
         </div>
 
         <div class = "authName">
-         author: Seaver, A.
+         Author: Seaver, A.
 
         </div >
 
         <div class ="mainText">
           The Management Strategy Evaluation (MSE) combines a number of NFT programs to examine the ability of stock assessment programs to provide the correct management advice when a variety of assumptions are broken. The PopSim model is used to create the operating model, aka simulated truth, while the VPA or ASPIC models can be used to estimate the population trajectory and time series of fishing mortality rates. These estimated values are used as input for AgePro or ASPICproj, respectively, to forecast the amount of catch that should be caught in future years according to a user defined control rule. The control rule relates the desired fishing mortality rate to the spawning stock or population biomass according to a simple rule of the full rate at high biomass with a linear decline once biomass falls below a user defined breakpoint. The simulated population has this amount of catch removed, with optional uncertainty and bias added, and the process is repeated a number of times into the future. The user can also optionally limit the amount of change in catch from year to year as an override of the expected catch from the projections. The feedback between the stock assessment model, forecasted catch, and future population abundance differentiates this program from the PopSim program.  The results of the MSE are a comparison between the true and estimated population abundance as well as the realized fishing mortality rate and the rate determined by the control rule. For example, the MSE program has been used with the VPA and AgePro settings to examine the utility of splitting survey time series in response to a strong retrospective pattern caused by changes in catch reporting or misspecification of the natural mortality rate. The program also allows the user to examine issues arising from low sampling of catch or surveys, as well as changes in biological characteristics such as the length-weight relationship. 
         </div>
+
         <div class="mainText">
         
 
+
           
-            </div>
+
+            
+              <div class = "ref">
+            Code Repository Badges
+          </div>
+             
+
+              
+              <img src="https://www.repostatus.org/badges/latest/inactive.svg">
+              
+              
+
+          </div>
       </div>
 
       <div class = "divider"></div>
-        <footer> <a class ="mylink" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
-    <a class ="mylink" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
-    <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a></footer>
+
+        <footer >
+             <img src="./static/noaa-fisheries-rgb-2line-horizontal-small.png" height="75px">
+         <div class="mywrap_center">
+          <a class ="mylink" id = "line" href="https://www.commerce.gov/">U.S. Department of Commerce</a>
+         <a class ="mylink" id = "line" href="https://www.noaa.gov">National Oceanographic and Atmospheric Administration</a>
+         <a class ="mylink" href="https://www.fisheries.noaa.gov/">NOAA Fisheries</a>
+         </div>
+
+        </footer>
+        <div class ="attribution">Icons by icons8 https://icons8.com/</div>
 
     </div>
 
