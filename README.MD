@@ -4,7 +4,7 @@
 
 **************
 
-https://nmfs-fish-tools.github.io/MSE/
+https://nmfs-fish-tools.github.io/MSE
 
 **************
 
